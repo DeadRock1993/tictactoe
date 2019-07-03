@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>TicTacToe</title>
+</head>
+<body class="container">
+    <div class="inside">
+        <h1>TicTacToe</h1>
+        <div id="log" class='log col-md-12'>
+          <h2 id='msgPl' class="msg">Player Has Won!</h2>
+          <h2 id='msgAi' class="msg">AI Has Won!</h2>
+          <h2 id='msgDR' class="msg">Draw!</h2>
+        </div>
+      <table id='table'>
+          <tr>
+              <td data-id='0'></td>
+              <td data-id='1'></td>
+              <td data-id='2'></td>
+          </tr>
+          <tr>
+              <td data-id='3'></td>
+              <td data-id='4'></td>
+              <td data-id='5'></td>
+          </tr>
+          <tr>
+              <td data-id='6'></td>
+              <td data-id='7'></td>
+              <td data-id='8'></td>
+          </tr>   
+      </table> 
+      <button id="reset" class="btn btn-md btn-danger mt-4 mb-2">New Game</button>
+      <div class="alert alert-success">
+        <h4>Scores:</h4>
+      </div>
+      <div class="alert alert-primary">
+      Player <span id='plScore' class="badge badge-secondary">0</span> 
+      </div>
+      <div class="alert alert-primary">
+      AI <span id='aiScore' class="badge badge-secondary">0</span>
+      </div>
+      <div class="alert alert-primary">
+      Draw <span id='drScore' class="badge badge-secondary">0</span>
+      </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
